@@ -1,0 +1,39 @@
+<script>
+  function convertLength(length, from, to) {
+    if (from === 'km') {
+      if (to === 'km') {
+        return length + ` ${to}`;
+      } else if (to === 'miles') {
+        return length / 1.6 + ` ${to}`;
+      } else if (to === 'ft') {
+        return length * 3281 + ` ${to}`;
+      } else {
+        return 'Invalid unit:' + ` ${to}`;
+      }
+    } else if (from === 'miles') {
+      if (to === 'km') {
+        return length * 1.6 + ` ${to}`;
+      } else if (to === 'miles') {
+        return length + ` ${to}`;
+      } else if (to === 'ft') {
+        return length * 5280 + ` ${to}`;
+      } else {
+        return 'Invalid unit:' + ` ${to}`;
+      }
+    } else if (from === 'ft') {
+      if (to === 'km') {
+        return length / 3281 + ` ${to}`;
+      } else if (to === 'miles') {
+        return length / 5280 + ` ${to}`;
+      } else if (to === 'ft') {
+        return length + ` ${to}`;
+      } else {
+        return 'Invalid unit:' + ` ${to}`;
+      }
+    } else {
+      return 'Invalid unit:' + ` ${from}`;
+    }
+  }
+
+  console.log(convertLength(32, 'km', 'mile'));
+</script>

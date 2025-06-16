@@ -1,0 +1,7 @@
+<input class="text-input" onkeyup="displayBelow();">
+<p class="input-dump"></p>
+<script>
+  function displayBelow() {
+    document.querySelector('.input-dump').innerHTML = document.querySelector('.text-input').value;
+  }
+</script>

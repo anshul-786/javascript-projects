@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Calculator
+    </title>
+    <link rel="stylesheet" href="styles/calculator.css">
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="results-tab"></div>
+      <div class="button-grid">
+        <button class="grey-button" onclick="
+          updateCalculation(1);
+        ">1</button>
+        <button class="grey-button" onclick="
+          updateCalculation(2);
+        ">2</button>
+        <button class="grey-button" onclick="
+          updateCalculation(3);
+        ">3</button>
+        <button class="yellow-button" onclick="
+          updateCalculation('+');
+        ">&plus;</button>
+        <button class="grey-button" onclick="
+          updateCalculation(4);
+        ">4</button>
+        <button class="grey-button" onclick="
+          updateCalculation(5);
+        ">5</button>
+        <button class="grey-button" onclick="
+          updateCalculation(6);
+        ">6</button>
+        <button class="yellow-button" onclick="
+          updateCalculation('\u2212');
+        ">&minus;</button>
+        <button class="grey-button" onclick="
+          updateCalculation(7);
+        ">7</button>
+        <button class="grey-button" onclick="
+          updateCalculation(8);
+        ">8</button>
+        <button class="grey-button" onclick="
+          updateCalculation(9);
+        ">9</button>
+        <button class="yellow-button" onclick="
+          updateCalculation('\u00D7');
+        ">&times;</button>
+        <button class="grey-button" onclick="
+          updateCalculation(0);
+        ">0</button>
+        <button class="grey-button" onclick="
+          updateCalculation('.');
+        ">.</button>
+        <button class="grey-button" onclick="
+          updateCalculation('=');
+        ">&equals;</button>
+        <button class="yellow-button" onclick="
+          updateCalculation('\u00F7');
+        ">&divide;</button>
+        <button class="grey-button clear-button" onclick="
+          updateCalculation('Clear');
+        ">Clear</button>
+        <button class="grey-button" onclick="
+          updateCalculation('Cut');
+        ">&#9003;</button>
+      </div>
+    </div>
+    <script src="scripts/calculator.js"></script>
+  </body>
+</html>

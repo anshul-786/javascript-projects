@@ -1,0 +1,9 @@
+<button onclick="updateParagraph('heads');">heads</button>
+<button onclick="updateParagraph('tails');">tails</button>
+<p class="js-result"></p>
+
+<script>
+  function updateParagraph(choice) {
+    document.querySelector('.js-result').innerHTML = `You chose: ${choice}`;
+  }
+</script>
