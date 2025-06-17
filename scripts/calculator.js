@@ -35,10 +35,16 @@ function updateCalculation(buttonVal) {
     }
     equated = false;
   } else {
-    if (calculation.at(-1) === ' ') {
+    if (calculation === '0' && buttonVal === '\u2212') {
+      calculation = `${buttonVal}`;
+    } else if (calculation === '\u2212') {
+      calculation = '0';
+    } else if (calculation.at(-1) === ' ') {
       calculation = calculation.slice(0, -3);
+      calculation += ` ${buttonVal} `;
+    } else {
+      calculation += ` ${buttonVal} `;
     }
-    calculation += ` ${buttonVal} `;
     equated = false;
   }
 
@@ -47,9 +53,6 @@ function updateCalculation(buttonVal) {
 }
 
 function displayCalculation(buttonVal = '=') {
-  console.log(buttonVal);
-  console.log(calculation);
-  console.log(calculation.at(-1));
   screen = document.querySelector('.results-tab');
   screen.innerHTML = calculation;
   if (buttonVal === '=') {
