@@ -34,7 +34,7 @@ function playGame(playerMove) {
       result = 'You win.';
     }
 
-  } else if (playerMove === 'scissors') {
+  } else if (playerMove === 'paper') {
     if (computerMove === 'rock') {
       result = 'You win.';
     } else if (computerMove === 'paper') {
