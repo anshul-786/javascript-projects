@@ -13,7 +13,13 @@ function updateCalculation(buttonVal) {
       equated = false;
     }
   } else if (buttonVal === '.') {
-    calculation += buttonVal;
+    if (calculation === '\u2212') {
+      calculation += `0${buttonVal}`;
+    } else if (calculation.at(-1) === '.') {
+      calculation = calculation;
+    } else {
+      calculation += buttonVal;
+    }
     equated = false;
   } else if (buttonVal === '=') {
     calculation = calculation.replace('\u2212', '-');
