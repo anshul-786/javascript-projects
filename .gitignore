@@ -1,0 +1,11 @@
+*
+!rock-paper-scissors.html
+!todo-list.html
+!calculator.html
+!images/
+!images/*
+!scripts/
+!scripts/*
+!styles/
+!styles/*
+!.gitignore
