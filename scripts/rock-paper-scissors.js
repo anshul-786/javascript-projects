@@ -62,6 +62,8 @@ document.body.addEventListener('keydown', (event) => {
     autoPlay();
   } else if (event.key === 'Backspace') {
     resetScore();
+  } else if (event.key === 'm') {
+    openManual();
   }
 });
 
@@ -132,4 +134,17 @@ function resetScore() {
   document.querySelector('.js-no-button').addEventListener('click', () => {
     document.querySelector('.js-warning-message').classList.remove('warning-message-activated');
   });
+}
+
+document.querySelector('.js-manual-button').addEventListener('click', () => openManual());
+let manualOpen = false;
+
+function openManual() {
+  if (!manualOpen) {
+    document.querySelector('.sidebar-manual').classList.add('sidebar-manual-activated');
+    manualOpen = true;
+  } else {
+    document.querySelector('.sidebar-manual').classList.remove('sidebar-manual-activated');
+    manualOpen = false;
+  }
 }

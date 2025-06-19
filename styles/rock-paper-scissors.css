@@ -8,6 +8,33 @@ body {
   height: 900px;
 }
 
+.sidebar-manual {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 200px;
+  background-color: transparent;
+  color: white;
+  padding-left: 10px;
+}
+
+.sidebar-manual-activated {
+  display: flex;
+}
+
+.heading {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.keyboard-shortcuts {
+  padding-left: 13px;
+}
+
 .title {
   font-size: 50px;
   font-weight: bold;
@@ -45,7 +72,8 @@ body {
 }
 
 .reset-score-button,
-.auto-play-button {
+.auto-play-button,
+.manual-button {
   background-color: white;
   border: none;
   font-size: 15px;
