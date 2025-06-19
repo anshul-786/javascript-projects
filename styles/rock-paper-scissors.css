@@ -52,3 +52,29 @@ body {
   padding: 8px 15px;
   cursor: pointer;
 }
+
+.warning-message {
+  display: none;
+  background-color: transparent;
+  margin-top: 30px;
+  font-size: 18px;
+  width: 497px;
+}
+
+.warning-message-activated {
+  display: block;
+}
+
+.warning-message-question {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.yes-button,
+.no-button {
+  background-color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+}
