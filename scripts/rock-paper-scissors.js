@@ -137,7 +137,7 @@ function resetScore() {
 }
 
 document.querySelector('.js-manual-button').addEventListener('click', () => openManual());
-let manualOpen = false;
+let manualOpen = true;
 
 function openManual() {
   if (!manualOpen) {
